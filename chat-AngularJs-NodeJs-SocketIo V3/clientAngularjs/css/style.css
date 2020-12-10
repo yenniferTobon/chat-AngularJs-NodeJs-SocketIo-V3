@@ -1,0 +1,31 @@
+body {
+    font-family: cursive;
+}
+.chat-login{
+    width: 35%; 
+    margin:auto; 
+    margin-top: 150px;
+}
+
+.users {
+    float: left;
+    text-align: center;
+}
+
+.message-container {
+    padding: 2px;
+}
+
+.message-box {
+    margin: 2%;
+    border-color: black;
+    border-width: 1ex;
+    height: 900;
+    float: right;
+}
+
+.message-sender {
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+}

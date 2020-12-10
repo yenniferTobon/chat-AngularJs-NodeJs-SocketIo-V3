@@ -1,0 +1,16 @@
+<div ng-show="mostrarCaja1" ng-app="miapp" ng-controller="users">
+    <div class="bg-info user-list">
+        <div id="main" class="users col-md-4">
+            <h2>Usuarios Conectados</h2>
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="user in userList"
+                    ng-class="{ 'active' : user.id == selectedUser}" ng-click=seletedUser(user.id); ng-style="{
+                        'cursor': user.id === socketId ? 'not-allowed' :'pointer'}">
+                    <a id='{{user.id}}'
+                        href="#{{user.id}}">{{ user.id === socketId ? user.userName: user.userName }}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <container-message></container-message>
+</div>
